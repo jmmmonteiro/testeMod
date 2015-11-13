@@ -1,6 +1,6 @@
 package testeMod;
 
-
+//ffffdssffdgfhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
 import java.net.*;
 import java.io.*;
 import net.wimpi.modbus.*;
@@ -50,9 +50,9 @@ public class Teste {
 		  //ESCREVER NO PLC
 		  SimpleRegister regis = new SimpleRegister(5);//prepara registo a enviar		
 			WriteSingleRegisterRequest req2 = new WriteSingleRegisterRequest(0,regis);//cria pedido
-			ModbusTCPTransaction trans2 = new ModbusTCPTransaction(con);//cria transação
+			ModbusTCPTransaction trans2 = new ModbusTCPTransaction(con);//cria transaÃ§Ã£o
 			trans2.setRequest(req2);//faz pedido
-			trans2.execute();//executa transação
+			trans2.execute();//executa transaÃ§Ã£o
 			WriteSingleRegisterResponse res2=(WriteSingleRegisterResponse) trans2.getResponse();//obtem resposta
 			int c=res2.getRegisterValue();
 			int d=res2.getReference();
@@ -61,22 +61,22 @@ public class Teste {
 		  }
 		  k++;
 		 
-		} while (repeat==1);//se estiver ==1 é ciclo infinito
+		} while (repeat==1);//se estiver ==1 Ã© ciclo infinito
 		
 		
 		/*//ESCREVER NO PLC
 		SimpleRegister regis = new SimpleRegister(5);//prepara registo a enviar		
 		WriteSingleRegisterRequest req2 = new WriteSingleRegisterRequest(0,regis);//cria pedido
-		ModbusTCPTransaction trans2 = new ModbusTCPTransaction(con);//cria transação
+		ModbusTCPTransaction trans2 = new ModbusTCPTransaction(con);//cria transaÃ§Ã£o
 		trans2.setRequest(req2);//faz pedido
-		trans2.execute();//executa transação
+		trans2.execute();//executa transaÃ§Ã£o
 		WriteSingleRegisterResponse res2=(WriteSingleRegisterResponse) trans2.getResponse();//obtem resposta
 		int c=res2.getRegisterValue();
 		int d=res2.getReference();
 		System.out.println("escrito no registo" +d +c);
 		
 		//TESTE GITHUB
-		Igual ao qu esté dentro do ciclo*/
+		Igual ao qu estÃ© dentro do ciclo*/
 		 
 		 
 		 //6. Close the connection
